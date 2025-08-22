@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Animals in Australia 🐨</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      padding: 50px;
+    }
+
+    h1, h2 { color: #333; }
+
+    .animal-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 50px;
+    }
+
+    .card {
+      width: 220px;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      padding: 12px;
+      text-align: center;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+
+    .card h3 {
+      margin: 6px 0 4px;
+      font-size: 1.1rem;
+    }
+
+    .card span {
+      font-weight: 500;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      margin: 4px 0 6px;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      font-size: 0.85rem;
+      text-align: left;
+      margin: 4px 0 0;
+    }
+
+    .card ul li { margin: 3px 0; }
+  </style>
+</head>
+<body>
+  <h1>Animals in Australia 🐾</h1>
+
+  <!-- Wild Animals -->
+  <h2 style="color: green;">Wild Animals 🐨🦘</h2>
+  <div class="animal-grid">
+    <!-- Koala -->
+    <div class="card">
+  <img src="koala.jpg" alt="Koala">
+  <h3>コアラ <span>(Koala)</span></h3>
+  <p>ユーカリの木で昼寝してるのが定番。</p>
+  <ul>
+    <li>見やすい場所: Queensland, NSW, VIC沿岸</li>
+    <li>季節: 通年</li>
+    <li>注意: 触らない・静かに観察</li>
+  </ul>
+</div>
+
+    <!-- Kangaroo -->
+    <div class="card">
+      <img src="kangaroo.jpg" alt="Kangaroo">
+      <h3>カンガルー <span>(Kangaroo)</span></h3>
+      <p>跳ねる姿がオーストラリアのシンボル。</p>
+      <ul>
+        <li>見やすい場所: 全土（特に郊外）</li>
+        <li>季節: 通年（朝夕が活発）</li>
+        <li>注意: 道路飛び出しに注意</li>
+      </ul>
+    </div>
+
+    <!-- Wallaby -->
+    <div class="card">
+      <img src="warabi.jpg" alt="Wallaby">
+      <h3>ワラビー <span>(Wallaby)</span></h3>
+      <p>カンガルーより小柄で人懐っこい。</p>
+      <ul>
+        <li>見やすい場所: Tasmania, NSW, VIC, QLD</li>
+        <li>季節: 通年</li>
+        <li>注意: 野生に餌やりはNG</li>
+      </ul>
+    </div>
+
+    <!-- Wombat -->
+    <div class="card">
+      <img src="wonbat.jpg" alt="Wombat">
+      <h3>ウォンバット <span>(Wombat)</span></h3>
+      <p>ずんぐりむっくり歩く姿が愛らしい夜行性。</p>
+      <ul>
+        <li>見やすい場所: Tasmania, NSW南部, VIC</li>
+        <li>季節: 冬〜春の夕方</li>
+        <li>注意: 夜道の運転注意</li>
+      </ul>
+    </div>
+
+    <!-- Quokka -->
+    <div class="card">
+      <img src="quokka.jpg" alt="Quokka">
+      <h3>クオッカ <span>(Quokka)</span></h3>
+      <p>“世界一幸せそうな動物”と呼ばれる笑顔。</p>
+      <ul>
+        <li>見やすい場所: Rottnest Island (WA)</li>
+        <li>季節: 通年</li>
+        <li>注意: 自撮りOKでも触らない</li>
+      </ul>
+    </div>
+
+    <!-- Tasmanian Devil -->
+    <div class="card">
+      <img src="tasmaniandevil.jpg" alt="Tasmanian Devil">
+      <h3>タスマニアンデビル <span>(Tasmanian Devil)</span></h3>
+      <p>小さな体で噛む力がすごい夜行性ハンター。</p>
+      <ul>
+        <li>見やすい場所: Tasmania</li>
+        <li>季節: 通年（夜）</li>
+        <li>注意: 野生は遭遇がレア</li>
+      </ul>
+    </div>
+
+    <!-- Emu -->
+    <div class="card">
+      <img src="emyu.jpg" alt="Emu">
+      <h3>エミュー <span>(Emu)</span></h3>
+      <p>世界で2番目に大きい鳥。草原や国立公園でのびのび生活。</p>
+      <ul>
+        <li>見やすい場所: Outback, SA, WA</li>
+        <li>季節: 通年</li>
+        <li>注意: 近づきすぎない（蹴られると危険）</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- City Animals -->
+  <h2 style="color: orange; margin-top:50px;">City Animals 🏙</h2>
+  <div class="animal-grid">
+    <!-- クロトキ -->
+    <div class="card">
+      <img src="binbird.jpg" alt="Crow">
+      <h3>クロトキ <span>(Crow)</span></h3>
+      <p>街中でよく見る賢い鳥。ゴミ箱チェックが日課。</p>
+    </div>
+
+    <!-- コカトゥー -->
+    <div class="card">
+      <img src="cockatoo.jpg" alt="Cockatoo">
+      <h3>コカトゥー <span>(Cockatoo)</span></h3>
+      <p>フワフワの頭が特徴。集団で街に出現。</p>
+    </div>
+
+    <!-- レインボーロリキート -->
+    <div class="card">
+      <img src="rainbow.jpg" alt="Rainbow Lorikeet">
+      <h3>レインボーロリキート <span>(Rainbow Lorikeet)</span></h3>
+      <p>カラフルで可愛い！街路樹で見かける。</p>
+    </div>
+
+    <!-- ポッサム -->
+    <div class="card">
+      <img src="possum.jpg" alt="Possum">
+      <h3>ポッサム <span>(Possum)</span></h3>
+      <p>夜行性で木の上に住む。人にあまり警戒しない。</p>
+    </div>
+
+    <!-- ゲッコー -->
+    <div class="card">
+      <img src="gekko.jpg" alt="Gecko">
+      <h3>ゲッコー <span>(Gecko)</span></h3>
+      <p>小さくて壁にピタッ。夜行性で虫を食べる。</p>
+    </div>
+
+    <!-- マグパイ -->
+    <div class="card">
+      <img src="magpie.jpg" alt="Magpie">
+      <h3>マグパイ <span>(Magpie)</span></h3>
+      <p>警戒心強めだけど可愛い。春は巣に注意！</p>
+    </div>
+  </div>
+
+</body>
+</html>

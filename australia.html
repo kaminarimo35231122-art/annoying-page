@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>What’s Australia? | 豪州の基礎情報まとめ</title>
+  <meta name="description" content="オーストラリアの基礎データを1ページに整理。" />
+  <style>
+    :root{
+      --bg:#fdf6ec;--card:#white;--ink:#black;--muted:#485361;--brand:#0077ff;--brand-2:#0fb;--accent:#ff9800;
+      --radius:18px;--shadow:0 6px 24px rgba(0,0,0,.2);
+    }
+    @media (prefers-color-scheme: light){
+      :root{--bg:#f7fbff;--card:#ffffff;--ink:#0e1520;--muted:#485361;--brand:#0077ff;--brand-2:#0fb;--accent:#ff9800}
+      body{background-image: radial-gradient(1200px 600px at 10% -10%, rgba(0,119,255,.08), transparent),
+                         radial-gradient(1000px 500px at 90% -20%, rgba(0,255,187,.08), transparent)}
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.7 system-ui, -apple-system, Segoe UI, Roboto, "Hiragino Kaku Gothic ProN", "Noto Sans JP", Meiryo, sans-serif}
+    header{position:static;top:0;z-index:50;background:var}
+    .wrap{max-width:1100px;margin:0 auto;padding:22px}
+    h1{font-size:clamp(28px,4vw,40px);letter-spacing:.5px;margin:10px 0 4px}
+    .subtitle{color:var(--muted);margin:0 0 6px}
+    .badge{display:inline-block;padding:6px 10px;border-radius:999px;background:linear-gradient(90deg,var(--brand),var(--brand-2));color:#001018;font-weight:700;font-size:.8rem}
+
+    .grid{display:grid;gap:18px}
+    @media(min-width:860px){.grid{grid-template-columns: 260px 1fr}}
+
+    nav.card{position:sticky;top:86px;align-self:start}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px}
+    .toc a{display:block;padding:8px 10px;border-radius:12px;color:var(--ink);text-decoration:none}
+    .toc a:hover{background:rgba(255,255,255,.04)}
+
+    section{scroll-margin-top:90px}
+    h2{font-size:clamp(20px,2.6vw,28px);margin:0 0 10px}
+    h3{margin:14px 0 6px}
+    p{margin:8px 0}
+    .muted{color:var(--muted)}
+    .kv{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+    .kv .flag{width:72px;height:48px;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+    .kv .flag img{width:100%;height:100%;object-fit:cover}
+
+    table{width:100%;border-collapse:collapse;border-spacing:0;margin:6px 0 2px}
+    th,td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.07)}
+    th{text-align:left;color:var(--muted);font-weight:600;width:180px}
+    .note{font-size:.9rem;color:var(--muted)}
+
+    .cards{display:grid;gap:16px}
+    @media(min-width:720px){.cards{grid-template-columns: repeat(2,1fr)}}
+
+    .tag{display:inline-block;padding:4px 8px;border-radius:999px;background:rgba(255,255,255,.08);font-size:.85rem;margin:4px 6px 0 0}
+
+    .timeline{position:relative;padding-left:22px}
+    .timeline::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--brand),var(--brand-2))}
+    .event{position:relative;margin:8px 0 14px}
+    
+    footer{color:var(--muted);text-align:center;padding:40px 20px}
+    code.k{background:rgba(255,255,255,.06);padding:2px 6px;border-radius:8px}
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <span class="badge">What’s Australia?</span>
+      <h1>オーストラリアの基礎情報</h1>
+          </div>
+  </header>
+
+  <main class="wrap grid">
+    <!-- TOC -->
+    <nav class="card toc" aria-label="目次">
+      <strong>目次</strong>
+      <a href="#basic">1. 基礎データ</a>
+      <a href="#climate">2. 気候</a>
+      <a href="#time">3. 日本との時差・DST</a>
+      <a href="#trade">4. 貿易相手国・日本との関係</a>
+      <a href="#history">5. 歴史（植民地・流刑地）</a>
+      <a href="#culture">6. 伝統・特徴・生活習慣</a>
+    </nav>
+
+    <div>
+      <!-- 基礎データ -->
+      <section id="basic" class="card">
+        <div class="kv">
+          <div class="flag" aria-hidden="true">
+            <!-- 適当なフリー画像に差し替えてOK -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg" alt="オーストラリア国旗" />
+          </div>
+          <div>
+            <h2>1. 基礎データ</h2>
+          </div>
+        </div>
+        <table aria-describedby="basic-note">
+          <tr><th>正式名称</th><td>オーストラリア連邦（Commonwealth of Australia）</td></tr>
+          <tr><th>首都</th><td>キャンベラ（Canberra）</td></tr>
+          <tr><th>面積</th><td>約 7,692,024 km²（出典により若干の差あり）</td></tr>
+          <tr><th>公用語</th><td>英語（オーストラリア英語）</td></tr>
+          <tr><th>通貨</th><td>オーストラリア・ドル AUD (紙幣は防水対応) <code class="k"></code></td></tr>
+          <tr><th>州・準州</th><td>6州＋2準州</td></tr>
+        </table>
+        </section>
+
+      <!-- 気候 -->
+      <section id="climate" class="card">
+        <h2>2. 気候</h2>
+        <p>オーストラリアは北部の<strong>熱帯</strong>、南部の<strong>温帯</strong>、内陸の<strong>乾燥（砂漠）</strong>が広がる多様な気候を持ちます。一般に降水量は少なく、乾燥傾向です。</p>
+        <div class="cards" role="list">
+          <div class="card" role="listitem">
+            <h3>北部（ダーウィン等）</h3>
+            <p>雨季（おおむね11〜4月）と乾季（5〜10月）が明瞭。高温多湿。</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>東・南部沿岸（シドニー、メルボルン等）</h3>
+            <p>温帯で四季の変化がある。降水は通年型〜冬寄り。</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>内陸（アウトバック）</h3>
+            <p>砂漠・半乾燥。日較差が大きく、降水は稀。</p>
+          </div>
+          <div class="card" role="listitem">
+            <h3>タスマニア島</h3>
+            <p>冷涼で湿潤。夏も比較的爽やかで、冬は寒冷。</p>
+          </div>
+        </div>
+        </section>
+
+      <!-- 時差・DST -->
+      <section id="time" class="card">
+        <h2>3. 日本との時差・サマータイム（DST）</h2>
+        <p>豪州は主に3つの標準時帯を採用。DST実施の有無は州によって異なります。</p>
+        <table>
+          <tr><th>地域</th><th>標準時</th><th>日本との時差</th></tr>
+          <tr><td>東部（NSW/VIC/ACT/QLD 等）</td><td>AEST = UTC+10</td><td>日本より +1時間</td></tr>
+          <tr><td>中部（SA/NT）</td><td>ACST = UTC+9:30</td><td>日本より +0:30</td><td></td></tr>
+          <tr><td>西部（WA）</td><td>AWST = UTC+8</td><td>日本より −1時間</td><td></td></tr>
+        </table>
+        </section>
+
+      <!-- 貿易・関係 -->
+      <section id="trade" class="card">
+        <h2>4. 貿易相手国・日本との関係</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>主要貿易相手国</h3>
+            <p>中国、日本、米国、韓国、ニュージーランド など（年度により順位変動）。</p>
+            <p class="note">主要輸出：鉄鉱石・石炭・天然ガス・農産品 等／主要輸入：機械類・車両・電子機器 等</p>
+          </div>
+          <div class="card">
+            <h3>日本との関係</h3>
+            <p>資源・エネルギーで補完的関係が強く、観光・教育・防衛協力でも連携。多くの姉妹都市交流がある。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 歴史 -->
+      <section id="history" class="card">
+        <h2>5. 歴史（植民地・流刑地）</h2>
+        <div class="timeline">
+          <div class="event"><strong>先住民の定住（約5〜6万年前〜）</strong><br><span class="muted">アボリジニ／トレス海峡諸島民の文化が各地に。</span></div>
+          <div class="event"><strong>1606年</strong>：ヨーロッパ人（オランダ人）による最初期の到達記録</div>
+          <div class="event"><strong>1770年</strong>：ジェームズ・クックが東海岸をイギリス領と主張</div>
+          <div class="event"><strong>1788年</strong>：「第一船団（First Fleet）」入植。<u>流刑植民地</u>として開拓が始まる</div>
+          <div class="event"><strong>1901年</strong>：6植民地が統合しオーストラリア連邦成立</div>
+          <div class="event"><strong>20世紀〜</strong>：移民政策の転換と多文化主義の進展</div>
+          <div class="event"><strong>現代</strong>：資源大国・アジア太平洋の要として国際的役割を拡大</div>
+        </div>
+        </section>
+
+      <!-- 文化・生活 -->
+      <section id="culture" class="card">
+        <h2>6. 伝統・特徴・生活習慣</h2>
+        <p>オーストラリアは<strong>多文化社会</strong>で、先住民文化・英系伝統・世界各地からの移民文化が融合しています。</p>
+        <div class="cards">
+          <div class="card">
+            <h3>伝統・行事</h3>
+            <p>NAIDOC Week、Australia Day、ANZAC Day など。先住民アートやドットペインティングも世界的に有名。</p>
+            </div>
+          <div class="card">
+            <h3>特徴</h3>
+            <p>自然が身近（ビーチ・国立公園）、スポーツ熱（クリケット・ラグビー・AFL）。カフェ文化も発達。</p>
+            </div>
+          <div class="card">
+            <h3>生活習慣</h3>
+            <p>フレンドリーでカジュアル。チップの習慣は限定的。屋外でBBQを楽しむ文化が定着。</p>
+            </div>
+          <div class="card">
+            <h3>安全・交通</h3>
+            <p>治安は比較的良好。都市部は公共交通が発達し車なし生活も可能。</p>
+        </div>
+</body>
+</html>
